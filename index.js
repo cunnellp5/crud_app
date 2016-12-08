@@ -18,8 +18,8 @@ app.listen(port, () =>{
 app.get('/pokemon', function(req, res){
   knex("pokemon")
   .select()
-  .then((data) => {
-    res.json(data)
+  .then((dicks) => {
+    res.json(dicks)
   });
 });
 
@@ -31,8 +31,8 @@ app.post('/pokemon', function (req, res, next){
     name: req.body.name,
     type: req.body.type,
     size: req.body.size
-  }, 'id').then((data) => {
-    res.json(data)
+  }, 'id').then((whatever) => {
+    res.json(whatever)
   });
 });
 
@@ -58,14 +58,3 @@ app.put('/pokemon/:id', function (req, res, next){
     res.json(data)
   });
 });
-
-
-// router.put('/:id', function(req, res){
-//
-//   Albums().where('id', req.params.id).update({
-//     stars: req.body.stars
-//   }).then(function(result){
-//     res.json(result);
-//   });
-//
-// });
