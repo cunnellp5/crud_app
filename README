@@ -7,3 +7,6 @@ Routes used:
 - POST/ pokemon
 - DELETE/ pokemon/:id
 - PUT/ pokemon/:id
+
+
+url = https://infinite-hollows-49046.herokuapp.com/pokemon
